@@ -91,6 +91,36 @@
               "src/styles.scss"
             ]
           }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "configDir": "src/showcase/.storybook",
+            "browserTarget": "storybook-demo:build",
+            "compodoc": true,
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "src/showcase/.storybook"
+            ],
+            "port": 6006
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "configDir": "src/showcase/.storybook",
+            "browserTarget": "storybook-demo:build",
+            "compodoc": true,
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "src/showcase/.storybook"
+            ],
+            "outputDir": "dist/storybook/showcase"
+          }
         }
       }
     }
