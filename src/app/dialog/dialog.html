@@ -1,0 +1,13 @@
+<sbb-dialog-title>Test</sbb-dialog-title>
+<sbb-dialog-content>
+  <sbb-form-field>
+    <label>Train types</label>
+    <sbb-select [formControl]="formControl">
+      <sbb-option [value]="'Astoro'">Astoro</sbb-option>
+      <sbb-option [value]="'Flirt'">Flirt</sbb-option>
+          <sbb-option [value]="'Domino'">Domino</sbb-option>
+    </sbb-select>
+  </sbb-form-field>
+
+  form value: {{ formControl.value }}
+</sbb-dialog-content>
